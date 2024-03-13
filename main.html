@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<link rel="stylesheet" type="text/css" href="style.css">
+<html>
+<head>
+  <title>Регистрация</title>
+</head>
+<body>
+  <h1>Регистрация</h1>
+  <button onclick="openForm()">Записаться</button>
+
+  <div class="form-container" id="myForm" style="display: none;">
+    <form action="/action_page.php">
+      <label for="FIO">ФИО:</label>
+      <input type="text" id="FIO" name="FIO">
+      <br>
+      <label for="Phone">Номер телефона:</label>
+      <input type="tel" id="Phone" name="Phone">
+      <br>
+      <label for="GroupText">Шифр группы:</label>
+      <input type="text" id="GroupText" name="GroupText">
+      <br>
+      <label for="GroupNumber">Номер группы:</label>
+      <input type="number" id="GroupNumber" name="GroupNumber">
+      <br>
+      <input type="submit" value="Отправить" onclick="saveToSeatable()">
+    </form>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
