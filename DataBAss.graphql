@@ -1,0 +1,11 @@
+type Mutation {
+    registerUser(FIO: String!, Phone: String!, GroupText: String!, GroupNumber: Int!):
+}
+
+type User {
+    id: ID!
+    FIO: String!
+    Phone: String!
+    GroupText: String!
+    GroupNumber: Int!
+}
